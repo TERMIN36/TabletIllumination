@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"tabletillumination\main.o"
+"tabletillumination\stm32f1xx_it.o"
+"tabletillumination\stm32f1xx_hal_msp.o"
+"tabletillumination\lcd.o"
+"tabletillumination\tm1637.o"
+"tabletillumination\system_stm32f1xx.o"
+"tabletillumination\stm32f1xx_hal_rtc.o"
+"tabletillumination\stm32f1xx_hal_flash_ex.o"
+"tabletillumination\stm32f1xx_hal_gpio.o"
+"tabletillumination\stm32f1xx_hal_cortex.o"
+"tabletillumination\stm32f1xx_hal_spi.o"
+"tabletillumination\stm32f1xx_hal_flash.o"
+"tabletillumination\stm32f1xx_hal.o"
+"tabletillumination\stm32f1xx_hal_tim.o"
+"tabletillumination\stm32f1xx_hal_tim_ex.o"
+"tabletillumination\stm32f1xx_hal_pwr.o"
+"tabletillumination\stm32f1xx_hal_rcc.o"
+"tabletillumination\stm32f1xx_hal_dma.o"
+"tabletillumination\stm32f1xx_hal_rtc_ex.o"
+"tabletillumination\stm32f1xx_hal_rcc_ex.o"
+"tabletillumination\startup_stm32f103xb.o"
+--library_type=microlib --strict --scatter "TabletIllumination\TabletIllumination.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TabletIllumination.map" -o TabletIllumination\TabletIllumination.axf
